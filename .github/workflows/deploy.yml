@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to Azure
-        uses: Azure/static-web-apps-deploy@v1
+        uses: Azure/azure-static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: $ {{ secrets.AZURE_TOKEN }}
           app_location: "public"
